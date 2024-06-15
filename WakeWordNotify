@@ -12,9 +12,9 @@ import sys
 if __name__ == "__main__":
     mq = posix_ipc.MessageQueue("/wakeword_queue")
     #Enqueue with send, str,Send unicode
-    params = sys.argv[1]
-    mq.send(params)
+    # params = sys.argv[1]
+    # mq.send("params")
 
     print("running " + sys.argv[0])
-    print("wakeword id: " + sys.argv[1])
+    # print("wakeword id: " + sys.argv[1])
     print("ended")
