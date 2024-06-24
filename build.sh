@@ -2,5 +2,5 @@
 
 git submodule update --init --recursive
 cd imx-voiceui
-make -j8
+make BUILD_ARCH=CortexA55 -j8
 cp -r release ../bridge_release
